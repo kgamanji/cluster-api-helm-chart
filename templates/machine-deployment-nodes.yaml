@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   clusterName: capi-quickstart
-  replicas: "{{ int .Values.workers.replicas }}" #3
+  replicas: "{{ default 3 .Values.workers.replicas }}" #3
   selector:
     matchLabels: null
   template:
