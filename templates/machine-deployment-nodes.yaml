@@ -20,4 +20,4 @@ spec:
         apiVersion: infrastructure.cluster.x-k8s.io/v1alpha3
         kind: AWSMachineTemplate
         name: capi-quickstart-md-0
-      version: v1.17.3
+      version: {{ .Values.kube.version }}

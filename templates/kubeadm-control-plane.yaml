@@ -26,5 +26,5 @@ spec:
         kubeletExtraArgs:
           cloud-provider: aws
         name: {{`'{{ ds.meta_data.local_hostname }}'`}}
-  replicas: 3
-  version: v1.17.3
+  replicas: {{ .Values.masters.replicas }} 
+  version: {{ .Values.kube.version }}
