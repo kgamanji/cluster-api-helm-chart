@@ -10,4 +10,4 @@ spec:
         nodeRegistration:
           kubeletExtraArgs:
             cloud-provider: aws
-          name: '{{ ds.meta_data.local_hostname }}'
+          name: {{`'{{ ds.meta_data.local_hostname }}'`}}
