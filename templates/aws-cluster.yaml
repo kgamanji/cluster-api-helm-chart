@@ -6,4 +6,3 @@ metadata:
 spec:
   region: eu-west-1
   sshKeyName: default
-
