@@ -1,8 +1,0 @@
-kube:
-  version: v1.19.1
-
-masters:
-  replicas: 3
-
-workers:
-  replicas: 3
