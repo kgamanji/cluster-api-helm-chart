@@ -8,8 +8,9 @@ A Helm chart to install Cluster API manifests
 
 ## Installing the Chart using ArgoCD
 
-To install the chart using ArgoCD use the following command:
 More details: https://github.com/kgamanji/cluster-api-argocd
+
+To install the chart using ArgoCD use the following command:
 ```
 kubectl apply -f argocd/application-capi.yaml
 ```
