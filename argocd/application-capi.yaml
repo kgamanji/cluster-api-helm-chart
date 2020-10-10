@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cluster-api
+  namespace: argocd
+spec:
+  destination:
+    namespace: 'default'
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    helm:
+      valueFiles:
+      - values-demo.yaml  
+    path: .
+    repoURL: https://github.com/kgamanji/cluster-api-helm-chart.git 
+    targetRevision: HEAD
+  syncPolicy: {}

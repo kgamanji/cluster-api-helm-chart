@@ -6,6 +6,14 @@ A Helm chart to install Cluster API manifests
 *Note: Currently the chart install a targer cluster in AWS. However it is intended to incude the support for other Cluster API providers.*
 
 
+## Installing the Chart using ArgoCD
+
+To install the chart using ArgoCD use the following command:
+More details: https://github.com/kgamanji/cluster-api-argocd
+```
+kubectl apply -f argocd/application-capi.yaml
+```
+
 ## Installing the Chart
 
 To install the chart with the release name `my-release`:
