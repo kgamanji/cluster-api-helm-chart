@@ -13,7 +13,7 @@ spec:
       valueFiles:
       - values.yaml
     path: .
-    repoURL: https://github.com/kgamanji/clusterapi-gitops.git
+    repoURL: https://github.com/kgamanji/cluster-api-helm-chart.git 
     targetRevision: HEAD
   syncPolicy:
     automated: {}
