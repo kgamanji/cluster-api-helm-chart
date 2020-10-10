@@ -1,0 +1,15 @@
+apiVersion: v1
+name: cluster-api 
+description: Install Cluster API manifests to generate a fully working Kubernetes cluster 
+keywords:
+- clusterapi 
+- provisioning
+- bootstrapping 
+- kubernetes
+version: 1.0.0
+home: https://cluster-api.sigs.k8s.io/ 
+sources:
+- https://cluster-api.sigs.k8s.io/
+maintainers:
+- name: kgamanji 
+  email: gamanjie@gmail.com

@@ -1,0 +1,8 @@
+kube:
+  version: v1.18.8
+
+masters:
+  replicas: 3
+
+workers:
+  replicas: 3
