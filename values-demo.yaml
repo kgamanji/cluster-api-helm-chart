@@ -5,4 +5,4 @@ masters:
   replicas: 3
 
 workers:
-  replicas: 4
+  replicas: 5
