@@ -9,3 +9,4 @@ flux bootstrap github \
   --personal
 ```
 
+FYI: Flux identified changes whithin a Helm chart if the chart version is bumped. Issue [here](https://github.com/fluxcd/flux2/discussions/965).
