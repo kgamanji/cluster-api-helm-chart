@@ -8,4 +8,3 @@ spec:
   ref:
     branch: main
   url: https://github.com/kgamanji/cluster-api-helm-chart 
-
