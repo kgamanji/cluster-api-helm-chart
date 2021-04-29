@@ -6,6 +6,6 @@ metadata:
 spec:
   interval: 30s
   ref:
-    branch: master
+    branch: main
   url: https://github.com/kgamanji/cluster-api-helm-chart 
 
