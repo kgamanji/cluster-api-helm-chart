@@ -6,7 +6,7 @@ keywords:
 - provisioning
 - bootstrapping 
 - kubernetes
-version: 1.0.0
+version: 1.0.1
 home: https://cluster-api.sigs.k8s.io/ 
 sources:
 - https://cluster-api.sigs.k8s.io/
