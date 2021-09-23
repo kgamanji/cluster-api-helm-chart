@@ -4,7 +4,7 @@ kind: GitRepository
 metadata:
   name: capi-aws 
 spec:
-  interval: 30s
+  interval: 29s
   ref:
     branch: main
   url: https://github.com/kgamanji/cluster-api-helm-chart 
