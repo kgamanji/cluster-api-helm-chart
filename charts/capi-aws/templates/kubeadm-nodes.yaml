@@ -1,4 +1,4 @@
-apiVersion: bootstrap.cluster.x-k8s.io/v1alpha3
+apiVersion: bootstrap.cluster.x-k8s.io/v1beta1
 kind: KubeadmConfigTemplate
 metadata:
   name: capi-quickstart-md-0
@@ -10,4 +10,4 @@ spec:
         nodeRegistration:
           kubeletExtraArgs:
             cloud-provider: aws
-          name: {{`'{{ ds.meta_data.local_hostname }}'`}}
+          name: {{`'{{ ds.meta_data.local_hostname }}'`}}          

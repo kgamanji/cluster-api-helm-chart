@@ -1,8 +1,8 @@
 kube:
-  version: v1.19.1
+  version: v1.22.0
 
 masters:
   replicas: 3
 
 workers:
-  replicas: 4
+  replicas: 1

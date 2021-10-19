@@ -1,13 +1,9 @@
-apiVersion: controlplane.cluster.x-k8s.io/v1alpha3
+apiVersion: controlplane.cluster.x-k8s.io/v1beta1
 kind: KubeadmControlPlane
 metadata:
   name: capi-quickstart-control-plane
   namespace: default
 spec:
-  infrastructureTemplate:
-    apiVersion: infrastructure.cluster.x-k8s.io/v1alpha3
-    kind: AWSMachineTemplate
-    name: capi-quickstart-control-plane
   kubeadmConfigSpec:
     clusterConfiguration:
       apiServer:
@@ -26,5 +22,10 @@ spec:
         kubeletExtraArgs:
           cloud-provider: aws
         name: {{`'{{ ds.meta_data.local_hostname }}'`}}
-  replicas: {{ .Values.masters.replicas }} 
+  machineTemplate:
+    infrastructureRef:
+      apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+      kind: AWSMachineTemplate
+      name: capi-quickstart-control-plane
+  replicas: {{ .Values.masters.replicas }}
   version: {{ .Values.kube.version }}
