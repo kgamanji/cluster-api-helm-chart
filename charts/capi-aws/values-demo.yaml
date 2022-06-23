@@ -1,8 +1,8 @@
 kube:
-  version: v1.22.0
+  version: v1.24.0
 
-masters:
+controlPlane:
   replicas: 3
 
 workers:
-  replicas: 3
+  replicas: 1

@@ -27,5 +27,5 @@ spec:
       apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
       kind: AWSMachineTemplate
       name: capi-quickstart-control-plane
-  replicas: {{ .Values.masters.replicas }}
+  replicas: {{ .Values.controlPlane.replicas }}
   version: {{ .Values.kube.version }}
