@@ -5,4 +5,4 @@ controlPlane:
   replicas: 3
 
 workers:
-  replicas: 1
+  replicas: 2

@@ -29,6 +29,6 @@ To install the chart with the release name `my-release`:
 
 | Parameter                                    | Description                                                                           | Default                                    |
 |:---------------------------------------------|:--------------------------------------------------------------------------------------|:-------------------------------------------|
-| `kube.version`                           | Kubernetes version to be installed on the target clusters                                 | `v1.18.8`        |
+| `kube.version`                           | Kubernetes version to be installed on the target clusters                                 | `v1.24.0`        |
 | `controlPlane.replicas`                                  | Amount of master nodes in the target cluster                                                     | `3`                                   |
-| `workers.replica`                           | Amount of worker nodes in the target cluster                                                                    | `3`                             |
+| `workers.replica`                           | Amount of worker nodes in the target cluster                                                                    | `1`                             |
